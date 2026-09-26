@@ -1,0 +1,5 @@
+id_medicion,archivo_origen,variable,valor_original,valor_final,tipo
+8,008.txt,longitud,0.0,-75.60079,Imputación o corrección
+62,medidaprueba.txt,longitud,0.0,-75.590885,Imputación o corrección
+8,008.txt,latitud,0.0,6.22636,Imputación o corrección
+62,medidaprueba.txt,latitud,0.0,6.24061,Imputación o corrección
