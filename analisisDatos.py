@@ -9,7 +9,7 @@ warnings.filterwarnings("ignore")
 # CONFIGURACIÓN
 # ============================================================
 
-RUTA_DATOS = Path("datos")
+RUTA_DATOS = Path("mediciones")
 SALIDA = Path("resultados")
 SALIDA.mkdir(exist_ok=True)
 
@@ -465,17 +465,3 @@ resumen.to_csv(
     SALIDA / "resumen_analisis.csv",
     index=False
 )
-
-
-# ============================================================
-# 10. FINALIZACIÓN
-# ============================================================
-
-print("\nPROCESO COMPLETADO")
-print("Archivos generados en la carpeta 'resultados':")
-print("- datos_unificados.csv")
-print("- registro_correcciones_imputaciones.csv")
-print("- analisis_frecuencias.csv")
-print("- resultados_canales.csv")
-print("- dataset_final_procesado.csv")
-print("- resumen_analisis.csv")

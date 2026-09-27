@@ -36,7 +36,7 @@ CANALES = {
 COLUMNAS_ESPECTRO = [f"espectro_{i+1}" for i in range(N_ESPECTRO)]
 FRECUENCIAS = np.linspace(F_MIN, F_MAX, N_ESPECTRO)
 
-st.set_page_config(page_title="Ocupación de espectro 840-860 MHz", layout="wide")
+st.set_page_config(page_title="Dashboard iterativo - Contaminacion Espectro", layout="wide")
 
 # Compatibilidad entre versiones de Plotly: las versiones nuevas (>=6) renombraron
 # scatter_mapbox/density_mapbox/Scattermapbox a scatter_map/density_map/Scattermap.
@@ -175,18 +175,15 @@ fuentes = estimar_fuentes_por_canal(datos, list(CANALES.keys()), centro["lat"], 
 # ------------------------------------------------------------------
 # BARRA LATERAL
 # ------------------------------------------------------------------
-st.sidebar.title("Hecho por: María Jose Ledesma Cordoba - ID: 00559241")
-
 st.sidebar.title("Filtros")
 canal_sel = st.sidebar.selectbox("Canal para el mapa de calor", list(CANALES.keys()))
 mostrar_valor = st.sidebar.radio("Métrica del canal", ["Potencia máxima (dBm)", "% de bins contaminados"])
 mapbox_style = st.sidebar.selectbox("Estilo de mapa", ["open-street-map", "carto-positron", "carto-darkmatter"])
 
 st.title("Ocupación de espectro 840-860 MHz — Medellín")
-if nombre_estudiante or id_estudiante:
-    st.caption(f"**{nombre_estudiante}**" + (f" · ID {id_estudiante}" if id_estudiante else ""))
+
 st.caption(
-    f"{len(datos)} mediciones · umbral de contaminación: {UMBRAL_CONTAMINACION:.0f} dBm · "
+    f"Hecho por: Majo L - ID: 00559241\n"
     f"frecuencia más contaminada del sistema: {freq_mas_contaminada:.2f} MHz"
 )
 

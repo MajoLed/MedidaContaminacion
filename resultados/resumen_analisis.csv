@@ -1,0 +1,15 @@
+indicador,valor
+mediciones,63
+archivos_procesados,63
+nulos_iniciales,0
+duplicados_detectados,0
+valores_espectrales_invalidos_iniciales,0
+faltantes_espectrales_despues_de_interpolar,0
+coordenadas_imputadas_o_corregidas,4
+correlacion_temperatura_error_distancia,-0.054439138823948505
+correlacion_temperatura_contaminacion,0.23298962176043925
+frecuencia_mayor_ocupacion_MHz,853.1573802541544
+frecuencia_menor_ocupacion_MHz,840.7429130009775
+frecuencia_mayor_potencia_promedio_MHz,851.7302052785924
+canal_mayor_ocupacion,Canal_C
+canal_menor_ocupacion,Canal_A
